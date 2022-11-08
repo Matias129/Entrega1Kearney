@@ -1,5 +1,6 @@
 from django.http import HttpResponse
-from django.template import Template, context
+from django.template import Template, Context
+
 
 from datetime import datetime
 
@@ -16,11 +17,11 @@ def inicio(request):
     archivo = open(r"/Users/TT/Documents/AC_DJANGO/test_coder/test_coder/templates/inicio.html"   , "r")
     
 
-    plantilla = Template (archivo.read)
+    plantilla = Template (archivo.read())
 
     archivo.close()
 
-    contexto = context()
+    contexto = Context()
 
     documento = plantilla.render(contexto)
 

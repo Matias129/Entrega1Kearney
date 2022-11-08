@@ -20,5 +20,5 @@ from test_coder.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('fecha/', fecha_actual),
-    path(' ', inicio)
+    path('inicio/', inicio)
 ]
