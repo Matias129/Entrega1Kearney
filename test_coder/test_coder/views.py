@@ -20,10 +20,34 @@ def inicio(request):
     plantilla = Template (archivo.read())
 
     archivo.close()
+#apartir de clase 18 modificamos
+#creamos un diccionario con datos para la plantilla
+    datos = {"nombre": "Matias", "fecha": datetime.now(), "apellido": "Kearney"}
 
-    contexto = Context()
+    contexto = Context(datos)
 
     documento = plantilla.render(contexto)
 
     return HttpResponse(documento)
+
+
+
+def vista_listado_autos (request):
+    
+    archivo = open(r"C:/Users/TT/Documents/AC_DJANGO/test_coder/test_coder/templates/listado_autos.html"  , "r")
+
+    plantilla = Template(archivo.read())
+
+    archivo.close()
+
+    listado_autos = ["Ford", "Chevrolet", "Toyota", "Fiat"]
+
+    datos = {"Mercedes_Benz": "SLS AMG", "Audi": "TT", "autoseco": listado_autos}
+
+    contexto = Context(datos)
+
+    documento = plantilla.render(contexto)
+
+    return HttpResponse(documento)
+
 
