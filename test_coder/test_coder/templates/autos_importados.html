@@ -4,16 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Listado de autoss</title>
+    <title>Importados</title>
 </head>
 <body>
-    
-    <h1>Curso de coder con autos</h1>
 
-    <p>Listado de autos</p>
+    <p>Listado de autos importados</p>
 
     <ul>
-        {% for auto in autoseco %}
+        {% for auto in autos_import %}
            <li> {{auto}} </li> 
         {% endfor %}
 
@@ -21,6 +19,6 @@
     </ul>
 
 
-
+    
 </body>
 </html>

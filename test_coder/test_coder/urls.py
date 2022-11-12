@@ -22,4 +22,5 @@ urlpatterns = [
     path('fecha/', fecha_actual),
     path('inicio/', inicio),
     path('autos/', vista_listado_autos),
+    path('autosim/', vista_listado_autos2),
 ]

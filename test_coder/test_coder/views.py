@@ -1,5 +1,5 @@
 from django.http import HttpResponse
-from django.template import Template, Context
+from django.template import Template, Context, loader
 
 
 from datetime import datetime
@@ -50,4 +50,16 @@ def vista_listado_autos (request):
 
     return HttpResponse(documento)
 
+
+def vista_listado_autos2 (request):
+    
+    listado_autos = ["Mitsubishi", "Honda", "Kia", "Porsche"]
+
+    datos = {"Mercedes_Benz": "SLS AMG", "Audi": "TT", "autos_import": listado_autos}
+
+    plantilla = loader.get_template("autos_importados.html")
+
+    documento = plantilla.render(datos)
+
+    return HttpResponse (documento)
 
