@@ -6,7 +6,7 @@ from django.http import HttpResponse
 
 def home(request):
 
-    return render (request, "appcoder/inicio.html")
+    return render (request, "appcoder/index.html")
 
 
 def modelos(request):

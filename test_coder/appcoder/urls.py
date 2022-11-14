@@ -3,7 +3,7 @@ from appcoder.views import *
 
 
 urlpatterns = [
-    path ("inicio/", home),
+    path ("index/", home),
     path ("modelos/", modelos),
     path ("marcas/", marcas),
     path ("peticiones ventas/", peticiones_ventas),

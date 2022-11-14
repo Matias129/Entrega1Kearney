@@ -12,7 +12,7 @@ def fecha_actual (request):
     return HttpResponse (f"Fecha actual: {hoy}")
 
 
-def inicio(request):
+#def inicio(request):
     
     archivo = open(r"/Users/TT/Documents/AC_DJANGO/test_coder/test_coder/templates/inicio.html"   , "r")
     
