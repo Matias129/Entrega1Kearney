@@ -1,17 +1,20 @@
-from django.shortcuts import render
 from django.http import HttpResponse
+from django.shortcuts import render
 
 # Create your views here.
 
 
 def home(request):
 
-    return render (request, "appcoder/index.html")
+    return render(request, "appcoder/index.html")
 
 
 def modelos(request):
 
-    return HttpResponse ("Estas en Modelos")
+    return render (request, "appcoder/modelos.html")
+
+
+    
 
 def marcas(request):
 
