@@ -14,21 +14,19 @@ def modelos(request):
     return render (request, "appcoder/modelos.html")
 
 
-    
-
 def marcas(request):
 
-    return HttpResponse ("Estas en Marcas")
+    return render (request, "appcoder/marcas.html")
 
 
 def peticiones_ventas(request):
 
-    return HttpResponse ("Estas en Peticiones de ventas")
+    return render (request, "appcoder/peticiones_ventas.html")
 
 
 def seccion_ingreso(request):
 
-    return HttpResponse ("Estas en Ingresos")
+    return render (request, "appcoder/seccion_ingreso.html")
 
 
 
