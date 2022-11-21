@@ -6,7 +6,7 @@ from django.shortcuts import render
 
 def home(request):
 
-    return render(request, "appcoder/padre.html")
+    return render(request, "appcoder/index.html")
 
 
 def modelos(request):
