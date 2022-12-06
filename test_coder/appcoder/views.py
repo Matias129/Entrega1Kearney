@@ -29,5 +29,8 @@ def seccion_ingreso(request):
     return render (request, "appcoder/seccion_ingreso.html")
 
 
+def prueba(request):
+
+    return render (request, "appcoder/prueba.html")
 
 

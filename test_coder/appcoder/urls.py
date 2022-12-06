@@ -8,6 +8,7 @@ urlpatterns = [
     path ("marcas/", marcas, name="marcas"),
     path ("peticiones ventas/", peticiones_ventas, name="peticiones"),
     path ("seccion ingreso/", seccion_ingreso, name="ingreso"),
+    path ("prueba/", prueba, name="prueba"),
 ]
 
 
