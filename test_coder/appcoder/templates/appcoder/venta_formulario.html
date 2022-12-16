@@ -1,0 +1,22 @@
+{% extends "appcoder/padre.html" %}
+
+
+{% block contenido %}
+<form action="/venta/crear" method="post">
+    
+    {% csrf_token %}
+
+    <p>
+        modelo <input type="text" name="Modelo">
+    </p>
+
+    <p>
+        marca <input type="text" name="Marca">
+    </p>
+
+    <input type="submit" value="Subir">
+</form>
+
+
+
+{% endblock %}

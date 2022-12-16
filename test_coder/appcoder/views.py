@@ -34,3 +34,7 @@ def prueba(request):
     return render (request, "appcoder/prueba.html")
 
 
+def creacion_venta(request):
+
+    return render(request, "appcoder/venta_formulario.html")
+
